@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<form action="/submitGuest" method="post">
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Email:
+    <input type="email" name="email"><br><br>
+
+    City:
+    <input type="text" name="city"><br><br>
+
+    Age:
+    <input type="number" name="age"><br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <br><br>
+
+    Breakfast:
+    <input type="checkbox" name="breakfast"> Yes
+
+    <br><br>
+
+    Favorite drink
+
+    <select name="drink">
+        <option>Coffee</option>
+        <option>Tea</option>
+        <option>Water</option>
+        <option>Juice</option>
+        <option>Milk</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

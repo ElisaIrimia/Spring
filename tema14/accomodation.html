@@ -1,0 +1,31 @@
+<body style="font-family: Arial, sans-serif; background-color:#f5f5f5; text-align:center;">
+
+<h1 style="color:#003366;">Hotel Accommodation</h1>
+
+<img th:src="@{/img.png}"
+     alt="Hotel"
+     width="700"
+     style="border-radius:15px; box-shadow:0 4px 10px gray;">
+
+<br><br>
+
+<table border="1"
+       style="margin:auto; border-collapse:collapse; background:white;">
+
+    <tr style="background-color:#4CAF50; color:white;">
+        <th style="padding:10px;">Type</th>
+        <th style="padding:10px;">Sqm</th>
+        <th style="padding:10px;">Guests</th>
+        <th style="padding:10px;">Balcony</th>
+    </tr>
+
+    <tr th:each="room : ${rooms}">
+        <td style="padding:8px;" th:text="${room.type}"></td>
+        <td style="padding:8px;" th:text="${room.sqm}"></td>
+        <td style="padding:8px;" th:text="${room.noOfGuests}"></td>
+        <td style="padding:8px;" th:text="${room.balcony}"></td>
+    </tr>
+
+</table>
+
+</body>
